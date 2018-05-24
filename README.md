@@ -8,7 +8,10 @@
 5.	Minimum via hole used: 0.35mm
 6.	Two layers 
 7.	Tented via
-### 2. BoM
+### 2. Layout
+1.	MCU pin #10 and pin #11 connects to RPi I2C SDA and SCL respectively.
+2.	MCU pin #28 and pin #29 connects to DAC HAT I2C SDA and SCL respectively.
+### 3. BoM
 1.	C1, C4: LDO bypass capacitor, 10uF 10V, part#:  1206ZC106MAT2A
 2.	C2, C3, C5: DVDD bypass capacitor, 2.2Uf 10V, part#: CC1206KKX7R6BB225
 3.	R1, R2: I2C slave pull-up, 3.9K ohm 1%, part#: CRCW12063K90FKEAC
@@ -19,7 +22,7 @@
 8.	GPIOS: 20x2 SMT GPIO connector, female, connects to RPi, link: https://www.modmypi.com/electronics/headers-337/raspberry-pi-hat-socket-header-smt
 9.	GPIOT: 20x2 SMT GPIO connector, male, connects to DAC HAT, link: https://www.ebay.com/itm/10pcs-RoHS-2-54mm-Pitch-2X40-Pin-Header-Strip-Double-Row-SMT-SMD-Male-PCB-Board/271556499758?epid=752838815&hash=item3f3a07592e:g:kWwAAOSwhMpTz-OF 
 Note this is 2x40 connector, you need to cut them in half to make 2x20 connectors
-### 3. Tested PDI programmer:
+### 4. Tested PDI programmer:
 Link: https://www.ebay.com/itm/Olimex-AVR-ISP-MK2-USB-Compatible-AVR-programmer-with-ICSP-PDI-TPI-Support/222686440093?ssPageName=STRK%3AMEBIDX%3AIT&_trksid=p2057872.m2749.l2649
 
 Note: Disconnect the controller board from the RPi during programming. The programmer will supply the 3.3V through the PDI header. 
@@ -28,8 +31,5 @@ Note: Disconnect the controller board from the RPi during programming. The progr
 1.	MCU firmware design:
 https://github.com/VinnyLorrin/ES9028Q2M-controller
 
-2.	MCU PCB design:
-TBA
-
-3.	MCU Linux ALSA driver:
+2.	MCU Linux ALSA driver:
 TBA
