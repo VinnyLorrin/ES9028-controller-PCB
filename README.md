@@ -23,13 +23,16 @@
 9.	GPIOT: 20x2 SMT GPIO connector, male, connects to DAC HAT, link: https://www.ebay.com/itm/10pcs-RoHS-2-54mm-Pitch-2X40-Pin-Header-Strip-Double-Row-SMT-SMD-Male-PCB-Board/271556499758?epid=752838815&hash=item3f3a07592e:g:kWwAAOSwhMpTz-OF 
 Note this is 2x40 connector, you need to cut them in half to make 2x20 connectors
 ### 4. Tested PDI programmer:
-Link: https://www.ebay.com/itm/Olimex-AVR-ISP-MK2-USB-Compatible-AVR-programmer-with-ICSP-PDI-TPI-Support/222686440093?ssPageName=STRK%3AMEBIDX%3AIT&_trksid=p2057872.m2749.l2649
+
+  Link: https://www.ebay.com/itm/Olimex-AVR-ISP-MK2-USB-Compatible-AVR-programmer-with-ICSP-PDI-TPI-Support/222686440093?ssPageName=STRK%3AMEBIDX%3AIT&_trksid=p2057872.m2749.l2649
 
 Note: Disconnect the controller board from the RPi during programming. The programmer will supply the 3.3V through the PDI header. 
 
 ### 5. Related resouce
 1.	MCU firmware design:
-https://github.com/VinnyLorrin/ES9028Q2M-controller
+
+  https://github.com/VinnyLorrin/ES9028Q2M-controller
 
 2.	MCU Linux ALSA driver:
-TBA
+
+  https://github.com/VinnyLorrin/ES9028-controller-Linux-Driver
